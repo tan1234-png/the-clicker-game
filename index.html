@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>The Clicker Game</title>
+ <style>
+  div {
+   font-size: 15;
+   font-family: "Cooper Black", sans-serif;
+   text-align: center;
+  }
+  h1 {
+   font-family: "Cooper Black", sans-serif;
+   text-align: center;
+  }
+  body {
+   background-color: lightblue;
+  }
+  button {
+   background-color: green;
+   color : black;
+   padding: 50px 100px;
+   border-radius: 75px;
+   font-family: "Cooper Black", sans-serif;
+   margin-top: 25px;
+   margin-bottom: 75px;
+   margin-right: 446px;
+   margin-left: 616px;
+  }
+ </style>
+</head>
+<body>
+  <h1>The Clicker Game</h1>
+  <button type="button" id="myButton">Click Me!</button>
+  <div id="myText" >times clicked : 0</div>
+  <script>
+   let click = 0
+   var button = document.getElementById("myButton");
+   var textDiv = document.getElementById("myText");
+
+   button.onclick = function() {
+    click += 1
+    textDiv.innerHTML = "times clicked : " + click;
+   }
+  </script>
+</body>
+</html>
