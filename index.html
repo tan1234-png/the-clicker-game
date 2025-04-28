@@ -15,7 +15,7 @@
   body {
    background-color: lightblue;
   }
-  button {
+  button.myButton {
    background-color: green;
    color : black;
    padding: 50px 100px;
@@ -30,7 +30,9 @@
 </head>
 <body>
   <h1>The Clicker Game</h1>
-  <button type="button" id="myButton">Click Me!</button>
+  <button type="button" id="myButton" class="myButton">Click Me!</button>
+  <button type="button" id="Exchange">mouse click to $ exchange</button>
+  <button type="button" id="upClick">Upgrade Mouse : 10$</button>
   <div id="myText" >times clicked : 0</div>
   <script>
    let click = 0
